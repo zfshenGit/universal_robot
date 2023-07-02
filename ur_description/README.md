@@ -7,7 +7,7 @@ source ./devel/setup.bash
 roscd ur_description/urdf/
 # xacro转urdf
 rosrun xacro xacro ur5_robot.urdf.xacro > ur5.urdf --inorder
-rosrun xacro xacro ur5_robot.urdf.xacro > my_ur5.urdf --inorder
+rosrun xacro xacro my_ur5_joint_limited_robot.urdf.xacro > my_ur5.urdf --inorder
 # check urdf
 check_urdf ur5.urdf
 check_urdf my_ur5.urdf

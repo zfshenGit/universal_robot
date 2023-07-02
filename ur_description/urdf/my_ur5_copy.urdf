@@ -378,9 +378,6 @@
       </geometry>
     </collision>
   </link>
-  <link name="world_link">
-
-  </link>
   <joint name="world_joint" type="fixed">
     <parent link="world"/>
     <child link="base_support_cylinder_link"/>
@@ -396,15 +393,10 @@
     <child link="base_support_box_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.25"/>
   </joint>
-  <joint name="base_world_joint" type="fixed">
-    <parent link="base_support_box_link"/>
-    <child link="world_link"/>
-    <origin rpy="0.0 0.0 -1.5708" xyz="0.0 0.25 0.0"/>
-  </joint>
   <joint name="base_support_joint_L" type="fixed">
-    <parent link="world_link"/>
+    <parent link="base_support_box_link"/>
     <child link="base_link"/>
-    <origin rpy="-0.61548 -2.61799 0.955316" xyz="0.0 0.0 0.0"/>
+    <origin rpy="-2.3562 0.0 0.0" xyz="0.0 0.25 0.0"/>
   </joint>
 </robot>
 
